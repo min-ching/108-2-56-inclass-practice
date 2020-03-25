@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585112974148.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3232512425",
+    "id" : "ED5F534D",
+    "lastKnownWriteTime" : 1585112772,
+    "last_content_update" : 1585112772,
+    "path" : "~/GitHub/108-2-56-inclass-practice/.Rhistory",
+    "project_path" : ".Rhistory",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_history"
+}
