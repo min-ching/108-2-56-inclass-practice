@@ -51,3 +51,12 @@ c(1:5) -> numbers
 hello <- "world"
 ```
 
+```{r}
+myList <- list(
+  zone1 <- list(1,2,3), # A
+  zone2 = c("a","b","c"), # B
+  factor(c("economics","sociology","sociology")), # C
+  `%share`= c(11,33,48,55) #D
+)
+```
+

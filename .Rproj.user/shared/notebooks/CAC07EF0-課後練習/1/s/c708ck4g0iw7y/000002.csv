@@ -1,0 +1,6 @@
+"0","myList <- list("
+"0","  zone1 <- list(1,2,3), # A"
+"0","  zone2 = c(""a"",""b"",""c""), # B"
+"0","  factor(c(""economics"",""sociology"",""sociology"")), # C"
+"0","  `%share`= c(11,33,48,55) #D"
+"0",")"

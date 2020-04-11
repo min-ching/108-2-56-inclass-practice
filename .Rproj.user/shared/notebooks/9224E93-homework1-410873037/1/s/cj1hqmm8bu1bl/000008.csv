@@ -1,0 +1,4 @@
+"0","yy <- 2020"
+"0","install.packages(c(`Mar.`)) mm <- `Mar.`"
+"2","錯誤: unexpected symbol in ""install.packages(c(`Mar.`)) mm""
+"
