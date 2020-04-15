@@ -161,7 +161,7 @@ List of 2
 ```{r ans33}
 
 accidents <- list(
-  time=ymd(c("2014-01")),
+  time=ymd(c("2014-01-01")),
   bureaus=list("板橋分局"=list(
     type=c("超速失控_含未減速","酒後駕車","未注意車前狀況","肇事逃      逸","未保持行車安全間距","未依規定讓車","行駛疏忽","違反號誌管      制","違反標誌標線","逆向行駛","轉彎不當","搶越行人穿越道","駕駛人過失-其他","機件故障","行人過失","交通管制設施缺陷","其他"),
     casualties= num <- c(0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0)
@@ -208,8 +208,8 @@ fiveReceipts <- .randomReceipts(n=5)
 ### 4.4
 若我們想要把fiveReceipts的螢幕顯示值用sum()函數加總，在只使用as.{class name}函數下，要怎麼做？把sum完的結果存在sum_fiveReceipts。
 ```{r ans44}
- as.numeric(sum(fiveReceipts))
- sum_fiveReceipts <- as.numeric(sum(fiveReceipts))
+ as.numeric(sum(c(fiveReceipts)))
+ sum_fiveReceipts <- (sum(c(fiveReceipts)))
  sum_fiveReceipts
 ```
 

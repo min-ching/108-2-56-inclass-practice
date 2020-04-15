@@ -1,4 +1,0 @@
-"0"," as.numeric(sum(fiveReceipts))"
-"2","Error in Summary.factor(c(3L, 1L, 4L, 4L, 4L), na.rm = FALSE) : 
-  ‘sum’ not meaningful for factors
-"
