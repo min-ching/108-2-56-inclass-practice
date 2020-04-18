@@ -1,20 +1,21 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1586864600330.000,
+    "created" : 1587211195270.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
-    "id" : "2F5FD34D",
-    "lastKnownWriteTime" : 1587180453,
-    "last_content_update" : 1587180468985,
+    "hash" : "4099899625",
+    "id" : "20CA30FD",
+    "lastKnownWriteTime" : 1587212809,
+    "last_content_update" : 1587212809117,
     "path" : "~/GitHub/108-2-56-inclass-practice/homework2-410873037.Rmd",
     "project_path" : "homework2-410873037.Rmd",
     "properties" : {
-        "cursorPosition" : "89,72",
-        "last_setup_crc32" : "E8211C60cb38937",
-        "scrollLine" : "83"
+        "cursorPosition" : "146,44",
+        "last_setup_crc32" : "B63E2EFEcb38937",
+        "scrollLine" : "139",
+        "source_window_id" : ""
     },
     "read_only" : false,
     "read_only_alternatives" : [
