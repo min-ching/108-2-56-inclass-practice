@@ -1,0 +1,5 @@
+"0","congrats <- ntpu_econtpu_eco %in% stringr::str_detect(students10$`志願`,""經濟"")"
+"0","students10$`姓名`[congrats]"
+"1","character(0)
+"
+"0","# congrats"
