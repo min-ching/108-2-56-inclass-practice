@@ -76,9 +76,9 @@ mostViolatedArticle_content
 找出處份日期最常出現的月份並存在popularSentenceMonth（class character, length=1）：
 ```{r ans15}
 popularSentenceMonth <- table(as.character(badEmployers$dt)) >= as.integer(max(table(as.character(badEmployers$dt))))
-table(as.character(badEmployers$dt))[popularSentenceMonth]
+popularSentenceMonth <- table(as.character(badEmployers$dt))[popularSentenceMonth]
 
-# popularSentenceMonth
+ popularSentenceMonth
 ```
 
 ## 2 個人申請
@@ -103,8 +103,9 @@ source("https://www.dropbox.com/s/5oy56om4q0857tt/student10.R?dl=1",encoding = "
 小知識:
 factor是從1開始的整數，沒有0喔。
 ```{r ans21}
-factor()
-# chinese
+students10$`國文` <- factor(c(students10$`國文`)+c(1))
+chinese<- students10$`國文`
+chinese
 ```
 
 ### 2.2 str_detect()
@@ -128,10 +129,9 @@ students10$`姓名`[ntpu_namelist]
 志願沒有填北大經濟的人可以進一階篩選嗎?
 logical儲存的本質是甚麼?
 ```{r ans23}
-ntpu_namelist <- students10$`國文` >= 12
-ntpu_namelist <- c(students10$`數學`)+c(students10$`英文`) >= 26
-ntpu_econtpu_eco <- as.character(students10$`姓名`[ntpu_namelist])
-ntpu_econtpu_eco
+
+
+#ntpu_eco
 ```
 
 ### 2.4 %in%
@@ -142,6 +142,8 @@ ntpu_econtpu_eco
 
 請將榜單文字儲存到名為congrats的答案物件(class為chr)。
 ```{r ans24}
-
-# congrats
+congrats <- paste0(
+  c("恭喜"), c(ntpu_eco),c("同學錄取國立臺北大學經濟系")
+)
+ congrats
 ```
