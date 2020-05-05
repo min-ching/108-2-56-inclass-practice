@@ -111,10 +111,9 @@ chinese
 ### 2.2 str_detect()
 請取出10位學生中志願為北大的學生名字並存到名為ntpu_namelist的答案物件(class為chr):
 ```{r ans22}
-ntpu_namelist <- stringr::str_detect(students10$`志願`,"北大")
-students10$`姓名`[ntpu_namelist]
-
- ntpu_namelist
+ntpu_namelist <- stringr::str_detect(students10$`志願`,"北大") 
+ntpu_namelist <-students10$`姓名`[ntpu_namelist]
+ntpu_namelist
 ```
 
 ### 2.3 vector計算&logical應用練習
@@ -129,9 +128,9 @@ students10$`姓名`[ntpu_namelist]
 志願沒有填北大經濟的人可以進一階篩選嗎?
 logical儲存的本質是甚麼?
 ```{r ans23}
-
-
-#ntpu_eco
+ntpu_eco <- stringr::str_detect(students10$`志願`,"北大經濟") & students10$`國文` >=12 & c(students10$`英文`)+c(students10$`數學`) >=26
+ntpu_eco <- students10$`姓名`[ntpu_eco]
+ntpu_eco
 ```
 
 ### 2.4 %in%
