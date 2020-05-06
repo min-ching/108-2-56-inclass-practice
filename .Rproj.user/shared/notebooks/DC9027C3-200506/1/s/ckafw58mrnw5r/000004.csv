@@ -1,0 +1,6 @@
+"0","str_count(heartSutra,""色"") # 計數"
+"1","[1]"
+"1"," 4"
+"1","
+"
+"0","str_view_all(heartSutra,""異色"") # 檢視"
