@@ -2,8 +2,8 @@
 title: "homework 4"
 output: html_document
 params:
-  studentName: "你的名字"
-  studentID: "你的學號"
+  studentName: "曾閔靖"
+  studentID: "410873037"
 ---
 
 # 注意事項
@@ -38,7 +38,14 @@ str_extract_all(twoNames, "段兄|段兄弟")
 ```
 請在小明的target regex後面加上「後面鄰居不能有弟」的regex描述並存在back_regex (class character) 裡. (hint: 查cheat sheet look around)
 ```{r ans1}
-# back_regex
+ target_regex <- "段(兄|兄弟)"
+A_regex <- "他"
+B_regex <- "，"
+back_regex <- glue::glue(
+  "(?<={A_regex}){target_regex}(?={B_regex})"
+  )
+back_regex <- str_extract_all(twoNames,back_regex)
+back_regex
 ```
 若你的答案正確，執行以下程式會得到一個段兄，一個段兄弟。
 ```{r}
@@ -55,6 +62,10 @@ jsonlite::fromJSON("https://www.dropbox.com/s/kv0xa0spa6q5l7q/semiGodsSemiDevils
 ### 2.1
 取出回數為"P2"的內文存在context_picked (class character). 
 ```{r ans21}
+str(semiGodsSemiDevils)
+semiGodsSemiDevils[[5]]
+
+
 # context_picked
 ```
 
