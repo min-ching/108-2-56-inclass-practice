@@ -155,10 +155,10 @@ population[["新北市"]]
 
 2.留下levels中有的popluation元素
 ```{r}
-levels(covid19$縣市) # 是名稱字串向量
+levels(covid19$`縣市`) # 是名稱字串向量
 
 # 由於population元素值有names，可以用`[名稱字串向量]`取出所要的
-levels(covid19$縣市) -> levelsInData
+levels(covid19$`縣市`) -> levelsInData
 population[levelsInData] -> population
 ```
 
@@ -178,20 +178,20 @@ newLevels
 
 5.重設levels排序
 ```{r}
-covid19$縣市 <-
+covid19$`縣市` <-
   factor(
-    covid19$縣市, levels=newLevels
+    covid19$`縣市`, levels=newLevels
   )
 
-levels(covid19$縣市)
+levels(covid19$`縣市`)
 ```
 
 
 將covid19$縣市 依縣市目前個案數目由大排到小。（hint: 可使用table()來得到個案數統計, 它會自然產生named integer vector）
 
 ```{r}
-
-
+table(covid19$`縣市`)
+sort(table(covid19$`縣市`), decreasing=T)
 ```
 
 
@@ -199,14 +199,14 @@ levels(covid19$縣市)
 年齡應該用年齡區間起始數字排序
 
 ```{r}
-levels(covid19$年齡層)
+levels(covid19$`年齡層`)
 ```
 
 
 1.取出levels中各年齡層的起始數字，存在startingAges
 
 ```{r}
-level_names <- levels(covid19$年齡層)
+level_names <- levels(covid19$`年齡層`)
 startingAges <- stringr::str_extract(
   level_names,
   "^[0-9]+" # regex：開頭的一串數字

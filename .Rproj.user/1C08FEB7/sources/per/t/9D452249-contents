@@ -32,17 +32,17 @@ library(jsonlite); library(lubridate); library(readr); library(stringr);
 小明想自twoNames中取出段兄及段兄弟兩個稱號，執行完以下結果他得到兩個「段兄」，第二個段兄應該要有弟：
 ```{r data1}
 twoNames <- "有人叫他段兄，但也有有人叫他段兄弟，最常...."
+str_extract_all(twoNames, "段(兄弟|兄)")
 
-str_extract_all(twoNames, "段兄|段兄弟")  
  
 ```
 請在小明的target regex後面加上「後面鄰居不能有弟」的regex描述並存在back_regex (class character) 裡. (hint: 查cheat sheet look around)
 ```{r ans1}
- target_regex <- "段(兄|兄弟)"
+back_regex <- "段(兄弟|兄)"
 A_regex <- "他"
 B_regex <- "，"
 back_regex <- glue::glue(
-  "(?<={A_regex}){target_regex}(?={B_regex})"
+  "(?<={A_regex}){back_regex}(?={B_regex})"
   )
 back_regex <- str_extract_all(twoNames,back_regex)
 back_regex
@@ -62,11 +62,8 @@ jsonlite::fromJSON("https://www.dropbox.com/s/kv0xa0spa6q5l7q/semiGodsSemiDevils
 ### 2.1
 取出回數為"P2"的內文存在context_picked (class character). 
 ```{r ans21}
-str(semiGodsSemiDevils)
-semiGodsSemiDevils[[5]]
-
-
-# context_picked
+context_picked <- as.character(semiGodsSemiDevils[[5]][[1]][[2]][[3]])
+context_picked
 ```
 
 ### 2.2
@@ -83,7 +80,10 @@ List of 1
 ```
 
 ```{r ans22}
-# context_picked_split
+string <- context_picked
+context_picked_split <- str_split(string, "\\s\\s")
+str(context_picked_split)
+context_picked_split
 ```
 
 ### 2.3
