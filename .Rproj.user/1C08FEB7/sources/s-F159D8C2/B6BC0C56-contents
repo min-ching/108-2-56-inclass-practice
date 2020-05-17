@@ -40,12 +40,10 @@ jsonlite::fromJSON("https://www.dropbox.com/s/es19f62rijrd8i7/studentHeight.json
 請將「學年度」及「年齡」都改成ordered factor, levels順序以其文字數值從小排到大。( 答案物件studentHeights本身)
 
 ```{r ans11}
-str(studentHeights)
-studentHeights$`學年度` <- factor(studentHeights$`學年度`)
-studentHeights$`年齡` <- factor(studentHeights$`年齡`)
-studentHeights$`學年度` <- sort(studentHeights$`學年度`)
-studentHeights$`年齡` <- sort(studentHeights$`年齡`)
- str(studentHeights)
+studentHeights$`學年度` <- ordered(studentHeights$`學年度`)
+studentHeights$`年齡`<- ordered(studentHeights$`年齡`)
+
+#studentHeights
 ```
 
 ### 1.2 年齡層
@@ -79,10 +77,9 @@ jsonlite::fromJSON("https://www.dropbox.com/s/bp0w8tjgrhi79x7/sameMajorDifferent
 請寫下「一個」字串的regex字串向量，稱之為realEstateRegex （class character, length=1）,
 
 ```{r ans21}
-#str(differentMajors)
-realEstateRegex <- as.character(differentMajors)
- )
- realEstateRegex
+realEstateRegex <- as.character(regex(differentMajors,length=1))
+class(realEstateRegex) 
+realEstateRegex
 ```
 
 使得執行以下程序後differentMajors裡屬「不動產與城鄉環境學系（不管何種寫法）」的都會變成"不動系"。這裡regex還有一個限制考驗，就是：「不動產與城鄉環境學系」的十個字都只會出現一次（所以不能寫"(不動系|不動產系|...)"之類的——不、動、系三字出現二次，違規）。(hint: 這題使用regex quantifier裡的`?`會容易很多)

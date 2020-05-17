@@ -1,0 +1,1 @@
+{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"table(covid19$縣市)","line_number":0}],"message":"Error in table(covid19$縣市) : 找不到物件 'covid19'\n"}
