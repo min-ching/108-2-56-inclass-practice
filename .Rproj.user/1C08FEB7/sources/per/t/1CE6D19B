@@ -5,7 +5,7 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "1799967200",
     "id" : "1CE6D19B",
     "lastKnownWriteTime" : 1589371576,
     "last_content_update" : 1589371576,
@@ -13,8 +13,8 @@
     "project_path" : "200513.Rmd",
     "properties" : {
         "cursorPosition" : "193,24",
-        "last_setup_crc32" : "F159D8C2bb338d19",
-        "scrollLine" : "191",
+        "last_setup_crc32" : "",
+        "scrollLine" : "0",
         "tempName" : "Untitled1"
     },
     "read_only" : false,
