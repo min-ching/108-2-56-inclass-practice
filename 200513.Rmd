@@ -73,37 +73,37 @@ jsonlite::fromJSON("https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender
 
 ```{r}
 # 不可排序類別：性別、縣市、是否境外移入
-covid19$縣市 <- 
-  factor(covid19$縣市)
-covid19$性別 <-
-  factor(covid19$性別)
-covid19$是否為境外移入 <-
+covid19$`縣市` <- 
+  factor(covid19$`縣市`)
+covid19$`性別` <-
+  factor(covid19$`性別`)
+covid19$`是否為境外移入` <-
   factor(
-    covid19$是否為境外移入
+    covid19$`是否為境外移入`
   )
 ```
 
 
 ```{r}
 # 可排序類別資料：年齡層
-covid19$年齡層 <-
+covid19$`年齡層` <-
   factor(
-    covid19$年齡層,
+    covid19$`年齡層`,
     ordered=TRUE
   )
 ```
 
 
 ```{r}
-levels(covid19$縣市)
-levels(covid19$性別)
-levels(covid19$是否為境外移入)
+levels(covid19$`縣市`)
+levels(covid19$`性別`)
+levels(covid19$`是否為境外移入`)
 ```
 
 
 ```{r}
-covid19$年齡層
-levels(covid19$年齡層)
+covid19$`年齡層`
+levels(covid19$`年齡層`)
 ```
 
 
@@ -122,8 +122,8 @@ levels放第二格時， **levels= 可省略**。
 
 手動輸入排法：由女男改男女
 ```{r}
-levels(covid19$性別)
-covid19$性別 <- factor(covid19$性別, c("男","女"))
+levels(covid19$`性別`)
+covid19$`性別` <- factor(covid19$`性別`, c("男","女"))
 levels(covid19$`性別`)
 ```
 
