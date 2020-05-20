@@ -1,0 +1,5 @@
+"0","population %>% "
+"0","  names(sort(.)) %>%"
+"0","  factor(cities, levels=.) -> cities"
+"2","Error in names(., sort(.)) : 傳遞了 2 個引數給 'names' 但它需要 1 個
+"

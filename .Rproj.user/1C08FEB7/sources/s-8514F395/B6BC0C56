@@ -5,7 +5,7 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3017058412",
+    "hash" : "0",
     "id" : "B6BC0C56",
     "lastKnownWriteTime" : 1589782199,
     "last_content_update" : 1589782199473,
@@ -14,7 +14,7 @@
     "properties" : {
         "chunk_output_type" : "console",
         "cursorPosition" : "45,20",
-        "scrollLine" : "39"
+        "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [

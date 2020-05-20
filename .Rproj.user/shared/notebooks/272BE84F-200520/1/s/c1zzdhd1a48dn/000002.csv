@@ -1,0 +1,3 @@
+"0","population %>% names(sort(.))"
+"2","Error in names(., sort(.)) : 傳遞了 2 個引數給 'names' 但它需要 1 個
+"
