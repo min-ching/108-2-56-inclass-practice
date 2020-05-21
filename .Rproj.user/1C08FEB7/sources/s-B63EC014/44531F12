@@ -5,16 +5,16 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "674440690",
+    "hash" : "3640033246",
     "id" : "44531F12",
-    "lastKnownWriteTime" : 1589982460,
-    "last_content_update" : 1589982460621,
+    "lastKnownWriteTime" : 1590063013,
+    "last_content_update" : 1590063013964,
     "path" : "~/GitHub/108-2-56-inclass-practice/homework5-410873037.Rmd",
     "project_path" : "homework5-410873037.Rmd",
     "properties" : {
         "chunk_output_type" : "console",
-        "cursorPosition" : "66,0",
-        "scrollLine" : "49"
+        "cursorPosition" : "162,0",
+        "scrollLine" : "150"
     },
     "read_only" : false,
     "read_only_alternatives" : [

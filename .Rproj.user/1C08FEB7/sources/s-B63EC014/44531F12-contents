@@ -92,7 +92,8 @@ jsonlite::fromJSON("https://www.dropbox.com/s/bp0w8tjgrhi79x7/sameMajorDifferent
 請寫下「一個」字串的regex字串向量，稱之為realEstateRegex （class character, length=1）,
 
 ```{r ans21}
-# realEstateRegex
+realEstateRegex <- regex(differentMajors)
+realEstateRegex
 ```
 
 使得執行以下程序後differentMajors裡屬「不動產與城鄉環境學系（不管何種寫法）」的都會變成"不動系"。這裡regex還有一個限制考驗，就是：「不動產與城鄉環境學系」的十個字都只會出現一次（所以不能寫"(不動系|不動產系|...)"之類的——不、動、系三字出現二次，違規）。(hint: 這題使用regex quantifier裡的`?`會容易很多)
@@ -105,7 +106,8 @@ str_replace(differentMajors,realEstateRegex,"不動系")
 ### 2.2 factor levels
 直接將differentMajors轉成factor, 並將它的levels存在currentLevels（class character）。（雖然同系有不同叫法而形成好幾個levels，這題不用去整併它。）
 ```{r ans22}
-# currentLevels
+currentLevels <- levels(factor(differentMajors))
+currentLevels
 ```
 
 
@@ -113,7 +115,8 @@ str_replace(differentMajors,realEstateRegex,"不動系")
 請寫下「一個」字串的regex（class character, length=1）稱之為bSchoolRegex,
 
 ```{r ans23}
-# bSchoolRegex
+bSchoolRegex <- regex(differentMajors)
+bSchoolRegex
 ```
 
 使得執行以下程序後currentLevels裡屬商學院的系都會變成"商學院"。（其實此題也可以要求第一題的限制，但怕難度太高這題則不設「系名字元不重覆」的限制）
@@ -129,7 +132,15 @@ str_replace(currentLevels,bSchoolRegex,"商學院")
   
 這題不限方法或regex使用次數。（答案物件differentMajors本身, class factor）
 ```{r ans24}
-# differentMajors
+str_replace(differentMajors,"不動產與城鄉環境學系|不動產城鄉學系","不動系") -> differentMajors
+str_replace(differentMajors,"休閒與運動管理學系","休運系") -> differentMajors
+str_replace(differentMajors,"金融與合作經營學系|金融與合作學系","金融系") -> differentMajors
+str_replace(differentMajors,"經濟學系","經濟系") -> differentMajors
+str_replace(differentMajors,"社會學系","社會系") -> differentMajors
+str_replace(differentMajors,"社會工作學系","社工系") -> differentMajors
+str_replace(differentMajors,"公共行政暨政策學系|公共行政系","公行系") -> differentMajors
+
+differentMajors
 ```
 
 
@@ -145,6 +156,10 @@ str_replace(currentLevels,bSchoolRegex,"商學院")
 即levels(school)會有「公共事務學院、商學院、社科院」。
 
 ```{r ans25}
-# school
+str_replace(differentMajors,"經濟系|社會系|社工系","社科院") -> differentMajors
+str_replace(differentMajors,"休運系|金融系","商學院") -> differentMajors
+str_replace(differentMajors,"公行系|不動系","公共事務學院") -> 
+school <- factor(differentMajors)
+school
 ```
 
