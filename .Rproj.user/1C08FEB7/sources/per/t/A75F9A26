@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590553200960.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2579114250",
+    "id" : "A75F9A26",
+    "lastKnownWriteTime" : 1590562630,
+    "last_content_update" : 1590562630099,
+    "path" : "~/GitHub/108-2-56-inclass-practice/homework5-ans-public.Rmd",
+    "project_path" : "homework5-ans-public.Rmd",
+    "properties" : {
+        "chunk_output_type" : "console",
+        "cursorPosition" : "208,0",
+        "scrollLine" : "199"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

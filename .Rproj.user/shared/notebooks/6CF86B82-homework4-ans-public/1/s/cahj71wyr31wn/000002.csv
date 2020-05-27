@@ -1,0 +1,5 @@
+"0","semiGodsSemiDevils$data[[1]]$section -> sections"
+"0","pick_p2 <- sections == ""P2"""
+"0","semiGodsSemiDevils$data[[1]]$text[pick_p2] -> context_picked"
+"0",""
+"0","# context_picked"

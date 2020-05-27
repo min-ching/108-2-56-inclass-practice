@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590553207819.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1232755409",
+    "id" : "50423158",
+    "lastKnownWriteTime" : 1590562630,
+    "last_content_update" : 1590562630142,
+    "path" : "~/GitHub/108-2-56-inclass-practice/homework3-ans-public.Rmd",
+    "project_path" : "homework3-ans-public.Rmd",
+    "properties" : {
+        "cursorPosition" : "147,0",
+        "last_setup_crc32" : "413C2AC339a306f2",
+        "scrollLine" : "126"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
