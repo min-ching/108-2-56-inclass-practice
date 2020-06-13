@@ -56,6 +56,7 @@ read_csv("https://www.dropbox.com/s/9xzccsvwrnctzul/mask.csv?dl=1") -> Mask
 請取出Mask裡的第一個身分證字號並用程式判斷他的單雙號，將結果儲存在1st_odd_or_even(class integer,length = 1)。
 單號請用1表示、雙號則用0表示。
 ```{r ans21}
+
 # `1st_odd_or_even`
 ```
 
