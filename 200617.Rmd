@@ -29,6 +29,13 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
+```{r}
+library(lubridate)
+library(purrr)
+library(stringr)
+library(magrittr)
+```
+
 
 ####  switch
 
@@ -166,10 +173,11 @@ x只要type是integer, double的資料都可使用，所以日期，時間都可
 
 (a,b]在數學上是a< . <=b，所以左側a值是「不包含」在裡面的
 
-其中最小值可以是負無窮-Inf, 最大值可以是正無窮Inf。
+其中最小值可以是負無窮**-Inf**, 最大值可以是正無窮**Inf**。
 
 ```{r}
 a <- c(1,2,3)
+typeof(a)
 cut(a, c(1,2,3))
 ```
 
@@ -186,14 +194,14 @@ cut(a, c(1,2,3))
 
 ```{r}
 grade <- sample(1:100, 10, replace=T)
-
+grade
 grade %>%
   cut(c(-1,69,79,89,100)) -> grade
 
 levels(grade)
 
 switch(
-  as.character(grade[[1]]),
+  as.character(grade[[7]]),
   "(-1,69]"={
     print("-_-")
     "F"},
