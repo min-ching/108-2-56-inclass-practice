@@ -1,0 +1,3 @@
+"0","a <- str_detect(ntpc_building_info$name,""停車場"")"
+"0","ntpc_building_parking <- data.frame(ntpc_building_info$name[a])"
+"0","ntpc_building_parking"

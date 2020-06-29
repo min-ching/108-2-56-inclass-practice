@@ -1,18 +1,17 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1591008165133.000,
+    "created" : 1593426452836.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
-    "id" : "139C0538",
-    "lastKnownWriteTime" : 1591008095,
-    "last_content_update" : 1591008095,
-    "path" : "~/GitHub/108-2-56-inclass-practice/homework6-ans.Rmd",
-    "project_path" : "homework6-ans.Rmd",
+    "hash" : "3209214915",
+    "id" : "B90EF428",
+    "lastKnownWriteTime" : 1593351728,
+    "last_content_update" : 1593351728,
+    "path" : "~/GitHub/108-2-56-inclass-practice/homework7-ans.Rmd",
+    "project_path" : "homework7-ans.Rmd",
     "properties" : {
-        "chunk_output_type" : "console"
     },
     "read_only" : false,
     "read_only_alternatives" : [
